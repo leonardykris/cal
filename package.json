@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "cal",
   "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Lightweight ticketing CMS",
   "engines": {
     "node": "6.10.2"
   },
@@ -10,12 +10,11 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "2.5.6",
-    "express": "4.15.2"
+    "express": "4.15.2",
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/leonardykris/cal"
   },
   "keywords": [
     "node",
