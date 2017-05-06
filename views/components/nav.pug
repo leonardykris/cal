@@ -1,0 +1,26 @@
+nav.navbar.navbar-default.navbar-static-top.navbar-inverse
+  .container
+    ul.nav.navbar-nav
+      li.active
+        a(href='/')
+          span.glyphicon.glyphicon-home
+          |  Home
+      li
+        a(href='https://devcenter.heroku.com/articles/how-heroku-works')
+          span.glyphicon.glyphicon-user
+          |  How Heroku Works
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+          span.glyphicon.glyphicon-info-sign
+          |  Getting Started Guides
+          span.caret
+        ul.dropdown-menu(role='menu')
+          li
+            a(href='https://devcenter.heroku.com/articles/getting-started-with-ruby') Getting Started with Ruby on Heroku
+          li
+            a(href='https://devcenter.heroku.com/articles/getting-started-with-nodejs') Getting Started with Node on Heroku
+    ul.nav.navbar-nav.navbar-right
+      li.navbar-right
+        a(href='https://devcenter.heroku.com')
+          span.glyphicon.glyphicon-book
+          |  Heroku Dev Center
