@@ -1,26 +1,28 @@
 var express = require('express');
-var app = express();
+var passport = require('passport');
+var router = express.Router();
 
-app.set('port', (process.env.PORT || 5000));
+// homepage
+// router.get('/', function(req, res, next) {
+//   res.render('index', {title: 'Express'});
+// });
 
-app.use(express.static(__dirname + '/public'));
-
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'pug');
-
-app.get('/', function(request, response) {
-  response.render('pages/dashboard');
+router.get('/', function(req, res, next) {
+  res.render('pages/dashboard');
 });
 
-app.get('/program', function(request, response) {
-  response.render('pages/program', {params: "content from request"});
+router.get('/program', function(req, res, next) {
+  res.render('pages/program', {params: "content from request"});
 });
 
-app.get('/login', function(request, response) {
-  response.render('components/login');
+router.get('/login', function(req, res, next) {
+  res.render('components/login');
 });
 
+module.exports = router;
+
+/*
+Other things from example
 // app.get('/cool', function(request, response) {
 //   response.send(cool());
 // });
@@ -45,9 +47,4 @@ app.get('/login', function(request, response) {
 //     });
 //   });
 // });
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-
+*/
