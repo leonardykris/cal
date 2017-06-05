@@ -3,6 +3,7 @@ node_modules
 npm-debug.log
 
 # Local development
+# So Procfile.dev won't get checked either
 *.env
 *.dev
 .DS_Store
